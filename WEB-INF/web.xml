@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>process.UploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/UploadServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>changeServlet</servlet-name>
+        <servlet-class>process.changeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>changeServlet</servlet-name>
+        <url-pattern>/changeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>jsonUploadServlet</servlet-name>
+        <servlet-class>process.jsonUploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jsonUploadServlet</servlet-name>
+        <url-pattern>/jsonUploadServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
